@@ -469,7 +469,7 @@ def unsplit_scanned_params(data):
 device_count = jax.local_device_count()
 
 print("device count", device_count)
-if count === 8:
+if count == 8:
   # continue(supported)
 elif count == 1:
   # contniue(supported)
