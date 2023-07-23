@@ -23,7 +23,8 @@ from flax.core.frozen_dict import FrozenDict, freeze, unfreeze
 from flax.serialization import from_bytes, to_bytes
 from flax.traverse_util import flatten_dict, unflatten_dict
 from huggingface_hub import Repository
-from jax.experimental import PartitionSpec, maps
+from jax.sharding import PartitionSpec
+from jax.experimental import maps
 from jax.experimental.compilation_cache import compilation_cache as cc
 from jax.experimental.pjit import pjit, with_sharding_constraint
 from lpips_j.lpips import LPIPS
