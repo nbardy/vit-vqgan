@@ -466,7 +466,16 @@ def unsplit_scanned_params(data):
     return freeze(unflatten_dict(flat))
 
 
-assert jax.local_device_count() == 8
+device_count = jax.local_device_count()
+
+print("device count", device_count)
+if count === 8:
+  # continue(supported)
+elif count == 1:
+  # contniue(supported)
+else:
+  raise Exception("only supports 1 or 8 cards")
+  
 
 
 def main():
